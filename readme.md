@@ -223,3 +223,21 @@ You can test the package after installation using pytest
     Written By: Anupam Hore
     Version: 1.0
     Revisions: None
+    
+<h3>find_variance_inflation_factor(arr, df)</h3>
+    
+    Method Name:find_variance_inflation_factor
+    Description: This method calls the statsmodels.stats.outlier_influence 's  variance_inflation_factor to calculate the VIF
+    Input: 
+            arr = scaled transformed array. Find the scaled transformed array using
+             E.g.,
+               arr = preprocessor.getScalarDistribution(df)
+            df  : a dataframe
+             E.g.,
+            df = preprocessor.loadcsv('FilePath')
+          
+    Output: Returns list of variables with Variance Inflation Factor(VIF) greater than 10
+    On Failure: Raise Exception
+    Written By: Anupam Hore
+    Version: 1.0
+    Revisions: None
